@@ -1,0 +1,550 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.carousel-inner > .carousel-item > img {
+  height: 600px;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-height: 600px !important;
+}
+
+/* Image Background */
+
+.whiteBackground {
+  background-color: white;
+}
+
+.greyBackground {
+  background-color: rgb(232, 231, 231);
+}
+
+/* Image Shadow */
+
+.imgShadow {
+  box-shadow: 5px 10px 10px 5px #878787;
+}
+
+.imgSlide {
+  max-height: 500px !important;
+  object-fit: cover;
+  object-position: center center;
+}
+
+/* Filter */
+
+.filter {
+  margin-top: 50px;
+  background-color: rgb(52, 50, 50);
+  border-color: aliceblue;
+  padding: 15px;
+  max-width: 75%;
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
+}
+
+.filter:hover {
+  box-shadow: 2px 2px 5px 5px rgba(5, 4, 4, 0.337);
+  transition: 0.5s ease;
+}
+
+.filter .captionDesg {
+  padding: 10px !important;
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
+}
+
+.filter .captionDesg > option {
+  background-color: rgb(52, 50, 50);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* END */
+
+/* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+  transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+
+.img-hover-zoom--brightness:hover img {
+  filter: brightness(100%);
+  transform: scale(1.05);
+}
+
+/* About us */
+
+.abtBackground {
+  position: absolute;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("./images/about7.jpg");
+  object-fit: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 69.5%;
+}
+
+.aboutUsHeading {
+  margin-top: 16%;
+  color: rgba(255, 255, 255, 0.558);
+  font-size: 65px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.subtitle {
+  margin-top: 35%;
+  position: relative;
+  text-transform: uppercase;
+  color: #999;
+  display: block;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-align: center;
+  padding: 50px;
+}
+
+.demo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  color: #363636;
+  margin-block-end: 1em;
+  display: block;
+}
+
+.hr {
+  max-width: 50%;
+  color: red;
+  margin-top: 10px;
+}
+
+/* END */
+
+/* Contact us */
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* background-image: url('./images/bg-registration-form-7.jpg'); */
+  /* background: #84fab0; */
+  background: linear-gradient(to right, rgb(236, 240, 238), rgb(237, 241, 242));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactInner {
+  max-width: 758px;
+  margin: auto;
+  background: #fff;
+  /* border: 10px solid #0d99d7; */
+  padding: 77px 110px 87px;
+  box-shadow: 5px 5px 15px 5px rgb(111, 109, 109);
+}
+
+.contactHeading {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.textarea {
+  resize: none;
+}
+
+.contactPrg {
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 55px;
+  line-height: 1.8;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 48px;
+}
+
+.form-group span {
+  font-size: 15px;
+  color: #00ade6;
+  position: absolute;
+  top: 11px;
+  transition: all 0.2s ease;
+  transform-origin: 0 0;
+  cursor: text;
+}
+
+.form-group span.border {
+  height: 2px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 41px;
+  transform: scaleX(0);
+  transition: all 0.15s ease;
+  background: #fff;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #00ade6;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  font-family: "Montserrat-SemiBold";
+}
+
+.form-control:focus,
+.form-control:valid {
+  border-bottom: 2px solid #fff;
+}
+
+.form-control:focus + span,
+.form-control:valid + span {
+  transform: translateY(-35px) scale(0.8);
+}
+
+.form-control:focus + span + .border,
+.form-control:valid + span + .border {
+  transform: scaleX(1);
+}
+
+textarea.form-control {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.button {
+  border: none;
+  width: 162px;
+  height: 51px;
+  margin: auto;
+  margin-top: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat-SemiBold";
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.button:hover {
+  border-color: transparent;
+  color: #fff;
+}
+
+.button:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.contactTxt {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactFA {
+  text-align: center;
+  font-size: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+/* End */
+
+/* registration */
+
+.bg-image {
+  /* background-image: url(./images/signup-bg.jpg); */
+  background: linear-gradient(to right, rgb(225, 231, 228), rgb(205, 214, 219));
+}
+
+.regForm {
+  border: none;
+  border-bottom: 1px solid #00ade6 !important;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  font-family: "Montserrat-SemiBold";
+}
+
+.btnRegister {
+  border: none;
+  width: 162px;
+  height: 51px;
+  margin: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: black;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btnRegister:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00aeff;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.btnRegister:hover {
+  border-color: transparent;
+  color: #fff;
+}
+
+.btnRegister:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.regInner {
+  /* background: #39449b; */
+  /* background: #84fab0; */
+  /* border: 10px solid #0d99d7; */
+  box-shadow: 5px 5px 15px 5px rgb(111, 109, 109);
+}
+
+.regHeading {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* End */
+
+/* SignIN */
+
+.main_header {
+  color: #000000;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.signHeading {
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+.signPRG {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+.Sign-a {
+  font-size: 14px;
+  text-decoration: none;
+  margin: 15px 0;
+}
+
+.signButton {
+  border-radius: 20px;
+  border: 1px solid #249fad;
+  background-color: #249fad;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+
+.signButton:hover {
+  color: #fff;
+}
+
+.signForm {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+.signInput {
+  background-color: rgb(247, 243, 243);
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+}
+
+.signInput:focus {
+  outline: 1px solid #249fad;
+}
+
+.signCustomContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.customSign:hover {
+  opacity: 0.5;
+}
+
+.signFormContainer {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.overlay-sign {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+}
+
+.overlay {
+  background-image: url(./images/login1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  opacity: 0.84;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+}
+
+.overlay-panel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  top: 0;
+  height: 100%;
+  width: 50%;
+}
+
+.overlay-right {
+  right: 0;
+}
+
+/* END */
+
+/* Buy */
+
+.buyImg {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.prgJustify {
+  text-align: justify;
+}
+
+/* END */
+
+.flatImg {
+  width: 600px !important;
+}
