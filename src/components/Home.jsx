@@ -7,7 +7,7 @@ function Home() {
   const [locations, setLocations] = useState([]);
   useEffect(() => {
     getLocations();
-  }, []);
+  }, [locations]);
 
   function getLocations() {
     axios.get("http://localhost/FYP/api/locations").then(function (response) {

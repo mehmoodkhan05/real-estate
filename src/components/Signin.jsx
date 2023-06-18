@@ -17,7 +17,7 @@ function Signin() {
     e.preventDefault();
 
     axios.post("http://localhost/FYP/api/login.php", inputs).then((res) => {
-      if (res.status == "200") {
+      if (res.status === "200") {
         // let user = res.config.data.split(",")[0].split(":")[1];
         let user = res.config.data.split(",")[0].split(":")[1].split('"')[1];
         let password = res.config.data
