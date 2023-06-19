@@ -27,11 +27,11 @@ function Houses() {
 
       <div className="container-sm d-flex mt-3 mb-5">
         <div className="row">
-          {houses.map((house, key) => (
+          {houses.map((house) => (
             <div className="col-md-4">
               <div
                 className="card img-hover-zoom img-hover-zoom--brightness p-2"
-                key={key}
+                key={house.id}
               >
                 <img
                   src={require(`../images/${house.g_img}`)}

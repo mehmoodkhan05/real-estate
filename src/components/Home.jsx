@@ -46,15 +46,15 @@ function Home() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="./images/1.jpg" className="d-block w-100" alt="..." />
+            <img src="./images/1.jpg" className="d-block w-100 img-fluid" alt="..." />
           </div>
 
           <div className="carousel-item">
-            <img src="./images/2.jpeg" className="d-block w-100" alt="..." />
+            <img src="./images/2.jpeg" className="d-block w-100 img-fluid" alt="..." />
           </div>
 
           <div className="carousel-item">
-            <img src="./images/3.jpg" className="d-block w-100" alt="..." />
+            <img src="./images/3.jpg" className="d-block w-100 img-fluid" alt="..." />
           </div>
         </div>
         <button
@@ -85,10 +85,10 @@ function Home() {
 
       <section className="houses-section whiteBackground pt-5">
         <div className="container mb-5">
-          <div className="row">
+          <div className="row align-items-center">
             <h1 className="mt-5 fw-bold text-center">Houses</h1>
-            <div className="col-lg-6 pt-5">
-              <p className="mt-4 ms-5" style={{ textAlign: "justify" }}>
+            <div className="col-lg-6 col-12 pt-5 order-2 order-lg-1">
+              <p className="mt-4" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
                 delectus iste pariatur quos illo numquam exercitationem tempora
@@ -109,7 +109,7 @@ function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-items-center pt-5">
+            <div className="col-lg-6 col-12 img-hover-zoom img-hover-zoom--brightness pt-5 order-1 order-lg-2">
               <img
                 src="./images/5.jpg"
                 className="rounded imgShadow img-fluid"
@@ -122,7 +122,7 @@ function Home() {
 
       <section className="plots-section greyBackground py-5">
         <div className="container mb-5">
-          <div className="row">
+          <div className="row align-items-center">
             <h1 className="pt-5 fw-bold text-center">Plots</h1>
             <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-content-center pt-5">
               <img
@@ -159,9 +159,9 @@ function Home() {
 
       <section className="rooms-section whiteBackground pt-5">
         <div className="container mb-5">
-          <div className="row">
+          <div className="row align-items-center">
             <h1 className="pt-5 fw-bold text-center">Rooms</h1>
-            <div className="col-lg-6 pt-5">
+            <div className="col-lg-6 pt-5 order-2 order-lg-1">
               <p className="mt-4" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
@@ -183,7 +183,7 @@ function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-content-center pt-5">
+            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-content-center pt-5 order-1 order-lg-2">
               <img
                 src="./images/room3.jpg"
                 className="rounded imgShadow img-fluid"
@@ -196,9 +196,9 @@ function Home() {
 
       <section className="flats-section greyBackground py-5">
         <div className="container mb-5">
-          <div className="row">
-            <h1 className="mx-5 mt-5 fw-bold text-center">Flats</h1>
-            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-content-center pt-5">
+          <div className="row align-items-center">
+            <h1 className="mt-5 fw-bold text-center">Flats</h1>
+            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness pt-5">
               <img
                 src="./images/flat1.jpg"
                 className="rounded imgShadow img-fluid"
@@ -206,7 +206,7 @@ function Home() {
               />
             </div>
             <div className="col-lg-6 pt-5">
-              <p className="mt-4" style={{ textAlign: "justify" }}>
+              <p className="" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
                 delectus iste pariatur quos illo numquam exercitationem tempora

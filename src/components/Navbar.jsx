@@ -35,28 +35,28 @@ function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <Link
-                className="nav-link active m-1 p-1"
+                className="nav-link active ms-3"
                 aria-current="page"
                 to="/buy"
               >
                 {props.buy}
               </Link>
               <Link
-                className="nav-link active m-1 p-1"
+                className="nav-link active ms-3"
                 aria-current="page"
                 to="/rent"
               >
                 {props.rent}
               </Link>
               <Link
-                className="nav-link active m-1 p-1"
+                className="nav-link active ms-3"
                 aria-current="page"
                 to="/about"
               >
                 {props.about}
               </Link>
               <Link
-                className="nav-link active m-1 p-1"
+                className="nav-link active ms-3"
                 aria-current="page"
                 to="/contact"
               >
@@ -64,7 +64,7 @@ function Navbar(props) {
               </Link>
               {token ? (
                 <Link
-                  className="nav-link active m-1 p-1"
+                  className="nav-link active"
                   aria-current="page"
                   to="/bookings"
                 >
@@ -79,15 +79,24 @@ function Navbar(props) {
                 <button
                   className="btn btn-outline-primary nav-link m-2 p-1 px-3 text-light"
                   onClick={onLogOutClick}
-                ><FontAwesomeIcon icon={faSignOut} className="me-2"></FontAwesomeIcon>
+                >
+                  <FontAwesomeIcon
+                    icon={faSignOut}
+                    className="me-2"
+                  ></FontAwesomeIcon>
                   Logout
                 </button>
               ) : (
                 <Link
-                  className="btn btn-outline-primary nav-link m-2 p-1 px-3 text-light" type="button"
+                  className="btn btn-outline-primary nav-link m-2 p-1 px-3 text-light"
+                  type="button"
                   aria-current="page"
                   to="/signin"
-                ><FontAwesomeIcon icon={faSignIn} className="me-2"></FontAwesomeIcon>
+                >
+                  <FontAwesomeIcon
+                    icon={faSignIn}
+                    className="me-2"
+                  ></FontAwesomeIcon>
                   Login
                 </Link>
               )}
