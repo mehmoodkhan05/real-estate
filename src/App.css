@@ -4,7 +4,7 @@
   z-index: 3;
 }
 
-.carousel-inner > .carousel-item > img {
+.carousel-inner>.carousel-item>img {
   height: 600px;
   object-fit: cover;
   object-position: center center;
@@ -62,7 +62,7 @@
   color: rgb(255, 255, 255) !important;
 }
 
-.filter .captionDesg > option {
+.filter .captionDesg>option {
   background-color: rgb(52, 50, 50);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -85,39 +85,43 @@
 /* About us */
 
 .abtBackground {
-  position: absolute;
-  background-image: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.4)
-    ),
-    url("./images/about7.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 550px;
+  padding: 200px 0;
+}
+
+.abtBackground img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 615px;
   object-fit: cover;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: 69.5%;
+  object-position: center;
+  z-index: -999;
 }
 
 .aboutUsHeading {
-  margin-top: 16%;
-  color: rgba(255, 255, 255, 0.558);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -999;
+  color: white;
   font-size: 65px;
   font-family: Arial, Helvetica, sans-serif;
-  position: -webkit-sticky;
-  top: 0;
-  z-index: 1;
 }
 
 .subtitle {
-  margin-top: 35%;
-  position: relative;
   text-transform: uppercase;
   color: #999;
-  display: block;
   letter-spacing: 3px;
   font-size: 14px;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0 50px 0;
 }
 
 .demo {
@@ -223,13 +227,13 @@
   border-bottom: 2px solid #fff;
 }
 
-.form-control:focus + span,
-.form-control:valid + span {
+.form-control:focus+span,
+.form-control:valid+span {
   transform: translateY(-35px) scale(0.8);
 }
 
-.form-control:focus + span + .border,
-.form-control:valid + span + .border {
+.form-control:focus+span+.border,
+.form-control:valid+span+.border {
   transform: scaleX(1);
 }
 

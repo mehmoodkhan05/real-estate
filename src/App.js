@@ -1,31 +1,33 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Buy from "./components/Buy";
-import Home from "./components/Home";
-import Contact from "./components/Contact";
-import Rent from "./components/Rent";
-import About from "./components/About";
-import Register from "./components/Register";
-import Signin from "./components/Signin";
-import Housebuy from "./components/Housebuy";
-import Plotbuy from "./components/Plotbuy";
-import Houses from "./components/Houses";
-import Plots from "./components/Plots";
-import Rooms from "./components/Rooms";
-import Flats from "./components/Flats";
-import Footer from "./components/Footer";
-import RoomRent from "./components/RoomRent";
-import FlatRent from "./components/FlatRent";
-import ThankYou from "./components/ThankYou";
-import BookingHouse from "./components/BookingHouse";
-import BuyHouse from "./components/BuyHouse";
-import BuyPlot from "./components/BuyPlot";
-import BookingFlat from "./components/BookingFlat";
-import BuyFlat from "./components/BuyFlat";
-import BookingRoom from "./components/BookingRoom";
-import Booked from "./components/Booked";
-import Bookings from "./components/Bookings";
+import {
+  Navbar,
+  Buy,
+  Home,
+  Contact,
+  Rent,
+  About,
+  Register,
+  Signin,
+  Housebuy,
+  Plotbuy,
+  Houses,
+  Plots,
+  Rooms,
+  Flats,
+  Footer,
+  RoomRent,
+  FlatRent,
+  ThankYou,
+  BookingHouse,
+  BuyHouse,
+  BuyPlot,
+  BookingFlat,
+  BuyFlat,
+  BookingRoom,
+  Booked,
+  Bookings
+} from "./components/index";
 
 function App() {
   return (
