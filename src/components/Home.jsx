@@ -46,15 +46,27 @@ function Home() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="./images/1.jpg" className="d-block w-100 img-fluid" alt="..." />
+            <img
+              src="./images/1.jpg"
+              className="d-block w-100 img-fluid"
+              alt="..."
+            />
           </div>
 
           <div className="carousel-item">
-            <img src="./images/2.jpeg" className="d-block w-100 img-fluid" alt="..." />
+            <img
+              src="./images/2.jpeg"
+              className="d-block w-100 img-fluid"
+              alt="..."
+            />
           </div>
 
           <div className="carousel-item">
-            <img src="./images/3.jpg" className="d-block w-100 img-fluid" alt="..." />
+            <img
+              src="./images/3.jpg"
+              className="d-block w-100 img-fluid"
+              alt="..."
+            />
           </div>
         </div>
         <button
