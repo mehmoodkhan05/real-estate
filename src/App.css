@@ -142,24 +142,22 @@
 
 /* Contact us */
 
+.form_contact {
+  background-image: url('./images/bg-registration-form-7.jpg');
+}
+
 .wrapper {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /* background-image: url('./images/bg-registration-form-7.jpg'); */
-  /* background: #84fab0; */
-  background: linear-gradient(to right, rgb(236, 240, 238), rgb(237, 241, 242));
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .contactInner {
   max-width: 758px;
   margin: auto;
-  background: #fff;
-  /* border: 10px solid #0d99d7; */
+  border: 10px solid #0d99d7;
   padding: 77px 110px 87px;
-  box-shadow: 5px 5px 15px 5px rgb(111, 109, 109);
+  text-shadow: 5px 5px 15px 5px rgb(111, 109, 109);
 }
 
 .contactHeading {
@@ -211,6 +209,13 @@
   background: #fff;
 }
 
+.form-control:focus {
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
+  border-bottom: 1px solid #00ade6 !important;
+}
+
 .form-control {
   border: none;
   border-bottom: 1px solid #00ade6;
@@ -222,19 +227,9 @@
   font-family: "Montserrat-SemiBold";
 }
 
-.form-control:focus,
-.form-control:valid {
-  border-bottom: 2px solid #fff;
-}
-
 .form-control:focus+span,
 .form-control:valid+span {
   transform: translateY(-35px) scale(0.8);
-}
-
-.form-control:focus+span+.border,
-.form-control:valid+span+.border {
-  transform: scaleX(1);
 }
 
 textarea.form-control {
@@ -254,8 +249,8 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   padding: 0;
-  background: #000;
-  color: #fff;
+  background: #ffc107;
+  color: #000;
   text-transform: uppercase;
   font-family: "Montserrat-SemiBold";
   -webkit-transform: perspective(1px) translateZ(0);
