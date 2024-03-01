@@ -1,5 +1,6 @@
+import "./buyPage.css"
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function Buy() {
@@ -65,7 +66,7 @@ function Buy() {
                 key={key}
               >
                 <img
-                  src={require(`../images/${house.g_img}`)}
+                  src={require(`../../images/${house.g_img}`)}
                   className="card-img-top"
                   alt="House"
                 />
@@ -109,7 +110,7 @@ function Buy() {
                 key={key}
               >
                 <img
-                  src={require(`../images/${plot.g_img}`)}
+                  src={require(`../../images/${plot.g_img}`)}
                   className="card-img-top"
                   alt="Plot"
                 />
@@ -150,7 +151,7 @@ function Buy() {
                 key={key}
               >
                 <img
-                  src={require(`../images/${flat.g_img}`)}
+                  src={require(`../../images/${flat.g_img}`)}
                   className="card-img-top"
                   alt="flat"
                 />

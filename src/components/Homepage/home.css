@@ -1,0 +1,38 @@
+.carousel-inner .carousel-item img {
+    height: 800px;
+    object-fit: cover;
+}
+
+/* Image Background */
+
+.whiteBackground {
+    background-color: white;
+}
+
+.greyBackground {
+    background-color: rgb(232, 231, 231);
+}
+
+/* Image Shadow */
+
+.imgShadow {
+    box-shadow: 5px 10px 10px 5px #878787;
+}
+
+.imgSlide {
+    max-height: 500px !important;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Brightness-zoom Container */
+.img-hover-zoom--brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+}
+
+.img-hover-zoom--brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.05);
+}

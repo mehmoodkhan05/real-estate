@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
@@ -36,7 +34,7 @@ function Contact() {
               cupiditate optio alias necessitatibus illum!
             </p>
             <div className="contactFA">
-              <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
+              {/* <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> */}
             </div>
           </div>
 
