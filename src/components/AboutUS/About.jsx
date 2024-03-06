@@ -1,8 +1,8 @@
-import React from "react";
-import mdImage from "../images/md.jpg";
-import adilImage from "../images/adil.jpeg";
-import kashifImage from "../images/kashif.jpg";
-import bg_img from "../images/about7.jpg";
+import "./aboutUs.css"
+import mdImage from "../../images/md.jpg";
+import adilImage from "../../images/adil.jpeg";
+import kashifImage from "../../images/kashif.jpg";
+import bg_img from "../../images/about7.jpg";
 
 function About() {
   return (
