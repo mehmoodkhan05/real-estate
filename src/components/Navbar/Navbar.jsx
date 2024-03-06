@@ -14,9 +14,9 @@ function Navbar(props) {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-warning">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <Link className="navbar-brand text-dark fw-bold" to="/">
+          <Link className="navbar-brand text-white fw-bold" to="/">
             Real Estate
           </Link>
           <button
@@ -33,44 +33,33 @@ function Navbar(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto">
               <Link
-                className="nav-link active ms-4 fw-bold text-dark"
+                className="nav-link active ms-4 fw-bold text-white"
                 aria-current="page"
                 to="/buy"
               >
                 {props.buy}
               </Link>
               <Link
-                className="nav-link active ms-4 fw-bold text-dark"
+                className="nav-link active ms-4 fw-bold text-white"
                 aria-current="page"
                 to="/rent"
               >
                 {props.rent}
               </Link>
               <Link
-                className="nav-link active ms-4 fw-bold text-dark"
+                className="nav-link active ms-4 fw-bold text-white"
                 aria-current="page"
                 to="/about"
               >
                 {props.about}
               </Link>
               <Link
-                className="nav-link active ms-4 fw-bold text-dark"
+                className="nav-link active ms-4 fw-bold text-white"
                 aria-current="page"
                 to="/contact"
               >
                 {props.contact}
               </Link>
-              {/* {token ? (
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/bookings"
-                >
-                  My Bookings
-                </Link>
-              ) : (
-                "a"
-              )} */}
             </ul>
             <form className="d-flex">
               {token ? (
@@ -78,10 +67,6 @@ function Navbar(props) {
                   className="btn btn-outline-primary nav-link m-2 p-1 px-3 text-light"
                   onClick={onLogOutClick}
                 >
-                  {/* <FontAwesomeIcon
-                    icon={faSignOut}
-                    className="me-2"
-                  ></FontAwesomeIcon> */}
                   Logout
                 </button>
               ) : (
@@ -91,10 +76,6 @@ function Navbar(props) {
                   aria-current="page"
                   to="/signin"
                 >
-                  {/* <FontAwesomeIcon
-                    icon={faSignIn}
-                    className="me-2"
-                  ></FontAwesomeIcon> */}
                   Login
                 </Link>
               )}

@@ -1,5 +1,6 @@
+import "./register.css"
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
@@ -43,7 +44,7 @@ function Register() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example1cg">
+                        <label className="form-label" htmlFor="form3Example1cg">
                           Your Name
                         </label>
                       </div>
@@ -57,7 +58,7 @@ function Register() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example3cg">
+                        <label className="form-label" htmlFor="form3Example3cg">
                           Your E-mail
                         </label>
                       </div>
@@ -71,7 +72,7 @@ function Register() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example4cg">
+                        <label className="form-label" htmlFor="form3Example4cg">
                           Password
                         </label>
                       </div>
@@ -84,7 +85,7 @@ function Register() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example4cdg">
+                        <label className="form-label" htmlFor="form3Example4cdg">
                           Phone #
                         </label>
                       </div>
@@ -97,7 +98,7 @@ function Register() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example4cdg">
+                        <label className="form-label" htmlFor="form3Example4cdg">
                           Address
                         </label>
                       </div>

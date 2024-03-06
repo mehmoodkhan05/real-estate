@@ -54,7 +54,7 @@ function BookingFlat() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example1cg">
+                        <label className="form-label" htmlFor="form3Example1cg">
                           Your Name
                         </label>
                       </div>
@@ -67,7 +67,7 @@ function BookingFlat() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example3cg">
+                        <label className="form-label" htmlFor="form3Example3cg">
                           Booking Date
                         </label>
                       </div>
@@ -80,7 +80,7 @@ function BookingFlat() {
                           className="form-control form-control-lg regForm"
                           required
                         />
-                        <label className="form-label" for="form3Example3cg">
+                        <label className="form-label" htmlFor="form3Example3cg">
                           Booking Months
                         </label>
                       </div>
