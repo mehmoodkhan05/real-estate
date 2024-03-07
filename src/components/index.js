@@ -12,7 +12,7 @@ import Houses from "./Houses";
 import Plots from "./Plots";
 import Rooms from "./Rooms";
 import Flats from "./Flats";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import RoomRent from "./RoomRent";
 import FlatRent from "./FlatRent";
 import ThankYou from "./ThankYou";

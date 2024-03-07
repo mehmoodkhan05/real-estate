@@ -1,0 +1,19 @@
+.footer-section {
+    background: var(--bg-torque);
+}
+
+.footer-section .footer-logo .footer_logo {
+    width: 410px;
+}
+
+.footer-section .footer_links:hover {
+    color: var(--secondary-color) !important;
+}
+
+.footer-section .footer_contact-icons .icons {
+    font-size: 26px;
+}
+
+.footer-section .footer_contact-icons .icons:hover {
+    color: var(--secondary-color) !important;
+}

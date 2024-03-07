@@ -1,5 +1,7 @@
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 3;
+.header-section .header-logo {
+    width: 80px;
+}
+
+.header-section .navbar-nav .nav-link:hover {
+    color: var(--secondary-color) !important;
 }

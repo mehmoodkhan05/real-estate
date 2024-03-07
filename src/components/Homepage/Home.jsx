@@ -1,33 +1,53 @@
 import "./home.css";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import CarouselBackground from "./Carousel";
+// import axios from "axios";
+// import { useEffect, useState } from "react";
+import image from "../../images/hero-bg2.jpg";
+import { TypeAnimation } from "react-type-animation";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Home() {
-  const [locations, setLocations] = useState([]);
-  useEffect(() => {
-    getLocations();
-  }, [locations]);
+  // const [locations, setLocations] = useState([]);
+  // useEffect(() => {
+  //   getLocations();
+  // }, [locations]);
 
-  function getLocations() {
-    axios.get("http://localhost/FYP/api/locations").then(function (response) {
-      setLocations(response.data);
-    });
-  }
+  // function getLocations() {
+  //   axios.get("http://localhost/FYP/api/locations").then(function (response) {
+  //     setLocations(response.data);
+  //   });
+  // }
 
   return (
     <>
-      <section className="carousel-section">
-        <CarouselBackground />
+      <section className="hero-section">
+        <div className="overlay-image">
+          <img src={image} alt="" className="img-fluid" />
+        </div>
+        <div className="typed-text-container text-center">
+          <TypeAnimation
+            className="hero_type-animation"
+            sequence={[
+              "Welcome to Real Estate",
+              1000,
+              "Explore our Listings",
+              1000,
+              "Find your Dream Home",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            repeat={Infinity}
+          />
+        </div>
       </section>
 
-      <section className="houses-section whiteBackground pt-5">
-        <div className="container mb-5">
-          <div className="row align-items-center">
-            <h1 className="mt-5 fw-bold text-center">Houses</h1>
-            <div className="col-lg-6 col-12 pt-5 order-2 order-lg-1">
-              <p className="mt-4" style={{ textAlign: "justify" }}>
+      <section className="houses-section whiteBackground p-lg-5">
+        <Container className="pt-5">
+          <Row className="align-items-center">
+            <Col lg={6} className="">
+              <h1 className="fw-bold text-center">Houses</h1>
+              <p className="mt-lg-5" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
                 delectus iste pariatur quos illo numquam exercitationem tempora
@@ -42,36 +62,36 @@ function Home() {
               <div align="center">
                 <Link
                   to="/houses"
-                  className="btn btn-outline-warning text-dark rounded px-5 py-2 mt-4 text-uppercase"
+                  className="btn rounded btn-w-180 mt-4 text-uppercase"
                 >
                   View All Houses
                 </Link>
               </div>
-            </div>
-            <div className="col-lg-6 col-12 img-hover-zoom img-hover-zoom--brightness pt-5 order-1 order-lg-2">
+            </Col>
+            <Col lg={6} className="img-hover-zoom img-hover-zoom--brightness">
               <img
                 src="./images/5.jpg"
                 className="rounded imgShadow img-fluid"
                 alt=""
               />
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section className="plots-section greyBackground py-5">
-        <div className="container mb-5">
-          <div className="row align-items-center">
-            <h1 className="pt-5 fw-bold text-center">Plots</h1>
-            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-content-center pt-5">
+      <section className="plots-section greyBackground p-lg-5">
+        <Container className="">
+          <Row className="align-items-center">
+            <Col lg={6} className="img-hover-zoom img-hover-zoom--brightness">
               <img
                 src="./images/a.jpg"
                 className="rounded imgShadow img-fluid"
                 alt=""
               />
-            </div>
-            <div className="col-lg-6 pt-5">
-              <p className="mt-4" style={{ textAlign: "justify" }}>
+            </Col>
+            <Col lg={6} className="">
+              <h1 className="fw-bold text-center">Plots</h1>
+              <p className="mt-lg-5" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
                 delectus iste pariatur quos illo numquam exercitationem tempora
@@ -86,22 +106,22 @@ function Home() {
               <div align="center">
                 <Link
                   to="/plots"
-                  className="btn btn-outline-warning text-dark rounded px-5 py-2 mt-5 text-uppercase"
+                  className="btn rounded btn-w-180 mt-4 text-uppercase"
                 >
                   View All Plots
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section className="rooms-section whiteBackground pt-5">
-        <div className="container mb-5">
-          <div className="row align-items-center">
-            <h1 className="pt-5 fw-bold text-center">Rooms</h1>
-            <div className="col-lg-6 pt-5 order-2 order-lg-1">
-              <p className="mt-4" style={{ textAlign: "justify" }}>
+      <section className="rooms-section whiteBackground p-lg-5">
+        <Container className="">
+          <Row className="align-items-center">
+            <Col lg={6} className="">
+              <h1 className="fw-bold text-center">Rooms</h1>
+              <p className="mt-lg-5" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
                 delectus iste pariatur quos illo numquam exercitationem tempora
@@ -116,36 +136,36 @@ function Home() {
               <div align="center">
                 <Link
                   to="/rooms"
-                  className="btn btn-outline-warning text-dark rounded px-5 py-2 mt-5 text-uppercase"
+                  className="btn rounded btn-w-180 mt-4 text-uppercase"
                 >
                   View All Rooms
                 </Link>
               </div>
-            </div>
-            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness d-flex align-content-center pt-5 order-1 order-lg-2">
+            </Col>
+            <Col lg={6} className="img-hover-zoom img-hover-zoom--brightness">
               <img
                 src="./images/room3.jpg"
                 className="rounded imgShadow img-fluid"
                 alt=""
               />
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
-      <section className="flats-section greyBackground py-5">
-        <div className="container mb-5">
-          <div className="row align-items-center">
-            <h1 className="mt-5 fw-bold text-center">Flats</h1>
-            <div className="col-lg-6 img-hover-zoom img-hover-zoom--brightness pt-5">
+      <section className="flats-section greyBackground p-lg-5">
+        <Container className="">
+          <Row className="align-items-center">
+            <Col lg={6} className="img-hover-zoom img-hover-zoom--brightness">
               <img
                 src="./images/flat1.jpg"
                 className="rounded imgShadow img-fluid"
                 alt=""
               />
-            </div>
-            <div className="col-lg-6 pt-5">
-              <p className="" style={{ textAlign: "justify" }}>
+            </Col>
+            <Col lg={6} className="">
+              <h1 className="fw-bold text-center">Flats</h1>
+              <p className="mt-lg-5" style={{ textAlign: "justify" }}>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
                 laboriosam error a voluptatem voluptatum consequatur, porro
                 delectus iste pariatur quos illo numquam exercitationem tempora
@@ -160,14 +180,14 @@ function Home() {
               <div className="text-center">
                 <Link
                   to="/flats"
-                  className="btn btn-outline-warning text-dark rounded px-5 py-2 mt-5 text-uppercase"
+                  className="btn rounded btn-w-180 mt-4 text-uppercase"
                 >
                   View All Flats
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );

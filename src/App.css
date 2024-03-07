@@ -6,14 +6,56 @@
 }
 
 :root {
+  --primary-color: #343580;
+  --secondary-color: #EAB33A;
+  --bg-orange: #D66B2E;
+  --bg-red: #A42429;
+  --bg-grey: #D9D9D9;
+  --bg-torque: linear-gradient(225deg, #8BC5CB 47.4%, #51A8B1 100%);
   --white-color: #fff;
   --black-color: #000;
 }
 
+/* * {
+  border: 1px solid !important;
+} */
+
 body {
   font-family: "cera pro", sans-serif;
   font-weight: 400;
-  color: var(--secondary-color);
+  font-size: 16px;
+}
+
+a {
+  color: var(--primary-color) !important;
+}
+
+.btn-w-108 {
+  width: 108px;
+  padding: 8px;
+}
+
+.btn-w-180 {
+  width: 180px;
+  padding: 10px;
+}
+
+.btn {
+  border: 1px solid var(--primary-color);
+  background: var(--primary-color);
+  color: var(--white-color) !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid var(--secondary-color);
+  background: var(--secondary-color);
+  color: var(--black-color);
+  letter-spacing: 1px;
+}
+
+.lh-3 {
+  line-height: 3;
 }
 
 /* Buy */
