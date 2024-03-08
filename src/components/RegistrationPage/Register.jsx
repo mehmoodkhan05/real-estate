@@ -1,29 +1,29 @@
-import "./register.css"
-import axios from "axios";
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import "./register.css";
+// import axios from "axios";
+// import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
-  const navigate = useNavigate();
-  const [inputs, setInputs] = useState({});
+  // const navigate = useNavigate();
+  // const [inputs, setInputs] = useState({});
 
-  const handleChange = (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
+  // const handleChange = (e) => {
+  //   const name = e.target.name;
+  //   const value = e.target.value;
 
-    setInputs((values) => ({ ...values, [name]: value }));
-  };
+  //   setInputs((values) => ({ ...values, [name]: value }));
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
 
-    axios.post("http://localhost/FYP/api/register.php", inputs).then((res) => {
-      navigate("/signin");
-    });
-  };
+  //   axios.post("http://localhost/FYP/api/register.php", inputs).then((res) => {
+  //     navigate("/signin");
+  //   });
+  // };
   return (
     <>
-      <section className="bg-image">
+      {/* <section className="bg-image">
         <div className="mask d-flex align-items-center h-100 gradient-custom-3">
           <div className="container h-100 mt-5 mb-5 ">
             <div className="row d-flex justify-content-center align-items-center h-100">
@@ -127,7 +127,65 @@ function Register() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <div className="container signCustomContainer mt-5 mb-5">
+        <div className="signFormContainer">
+          <div className="overlay-sign">
+            <div className="overlay">
+              <div className="overlay-panel overlay-right">
+                <img src="./images/login.jpeg" alt="" />
+                <h1>Welcome Back!</h1>
+                <p className="signPRG">
+                  To keep connetced with us please login with your personal
+                  info.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form method="POST" className="signForm">
+            <div className="main_header">
+              <h1 className="signHeading mt-5">Login</h1>
+            </div>
+            <input
+              type="email"
+              name="email"
+              // onChange={handleChange}
+              placeholder="Email"
+              className="signInput"
+              required
+            />
+            <input
+              type="password"
+              // onChange={handleChange}
+              name="password"
+              placeholder="Password"
+              className="signInput"
+              required
+            />
+
+            <button
+              // onClick={handleSubmit}
+              type="submit"
+              className="signButton Sign-a"
+            >
+              Login
+            </button>
+            <div>
+              <p className="mt-5 signPRG">
+                Don't have Account?{" "}
+                <Link
+                  to="/register"
+                  className="text-dark fw-bold text-decoration-none customSign"
+                >
+                  Sign Up
+                </Link>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
     </>
   );
 }

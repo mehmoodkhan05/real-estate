@@ -1,10 +1,14 @@
-import "./aboutUs.css"
+import "./aboutUs.css";
 import mdImage from "../../images/md.jpg";
 import adilImage from "../../images/adil.jpeg";
 import kashifImage from "../../images/kashif.jpg";
 import bg_img from "../../images/about7.jpg";
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <div className="abtBackground">

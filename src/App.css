@@ -30,6 +30,11 @@ a {
   color: var(--primary-color) !important;
 }
 
+.btn-w-128 {
+  width: 128px;
+  padding: 10px;
+}
+
 .btn-w-108 {
   width: 108px;
   padding: 8px;
@@ -52,6 +57,11 @@ a {
   background: var(--secondary-color);
   color: var(--black-color);
   letter-spacing: 1px;
+}
+
+.btn:focus,
+.btn:active {
+  box-shadow: none;
 }
 
 .lh-3 {

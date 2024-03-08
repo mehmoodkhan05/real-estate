@@ -1,13 +1,5 @@
-.contact-left_side {
-  background: rgba(128, 128, 128, 0.349);
-}
-
-.contact-left_side h1 {
-  padding-top: 116px;
-}
-
 .form_contact {
-  background-image: url("../../images/bg-registration-form-7.jpg");
+  background: linear-gradient(230deg, #51A8B1 50%, #8BC5CB 60%);
 }
 
 .wrapper {
@@ -19,22 +11,17 @@
 .contactInner {
   max-width: 758px;
   margin: auto;
-  border: 10px solid #0d99d7;
+  border: 10px solid var(--primary-color);
   padding: 77px 110px 87px;
-  background: #4d8299;
+  background: linear-gradient(229.6deg, #8BC5CB 50%, #51A8B1 65%);
 }
 
 .contactHeading {
   text-transform: uppercase;
   font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   font-weight: bold;
-}
-
-.textarea {
-  resize: none;
+  color: var(--primary-color);
 }
 
 .contactPrg {
@@ -42,7 +29,7 @@
   padding: 0 10px;
   margin-bottom: 55px;
   line-height: 1.8;
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primary-color);
 }
 
 .form-group {
@@ -52,13 +39,12 @@
 }
 
 .form-group span {
-  font-size: 15px;
-  color: #00ade6;
   position: absolute;
   top: 11px;
   transition: all 0.2s ease;
   transform-origin: 0 0;
   cursor: text;
+  color: var(--primary-color);
 }
 
 .form-group span.border {
@@ -70,103 +56,37 @@
   top: 41px;
   transform: scaleX(0);
   transition: all 0.15s ease;
-  background: #fff;
+  background: transparent;
+}
+
+.form-group input {
+  caret-color: var(--primary-color);
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background: none;
 }
 
 .form-control:focus {
   background: transparent;
   color: #fff;
   box-shadow: none;
-  border-bottom: 1px solid #00ade6 !important;
+  border-bottom: 1px solid var(--primary-color) !important;
 }
 
-.form-control {
-  border: none;
-  border-bottom: 1px solid #00ade6;
-  display: block;
-  width: 100%;
-  height: 43px;
-  font-size: 15px;
-  background: none;
-  font-family: "Montserrat-SemiBold";
-}
 
 .form-control:focus+span,
 .form-control:valid+span {
   transform: translateY(-35px) scale(0.8);
 }
 
-textarea.form-control {
-  padding-top: 10px;
-  padding-bottom: 10px;
+textarea.textarea {
+  vertical-align: text-bottom;
+  resize: vertical;
   overflow: hidden;
-}
-
-.button {
-  border: none;
-  width: 162px;
-  height: 51px;
-  margin: auto;
-  margin-top: 60px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  background: #ffc107;
-  color: #000;
-  text-transform: uppercase;
-  font-family: "Montserrat-SemiBold";
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.button:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #4d8299;
-  border: 1px solid #00ade6;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.button:hover {
-  border-color: transparent;
-  color: #fff;
-}
-
-.button:hover:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-}
-
-.contactTxt {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.contactFA {
-  text-align: center;
-  font-size: 200px;
-  padding: 0;
-  margin: 0;
+  resize: none;
+  height: 10px;
+  caret-color: var(--primary-color);
 }

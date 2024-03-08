@@ -1,7 +1,7 @@
 import "./home.css";
 import { Link } from "react-router-dom";
 // import axios from "axios";
-// import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import image from "../../images/hero-bg2.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { Col, Container, Row } from "react-bootstrap";
@@ -17,6 +17,10 @@ function Home() {
   //     setLocations(response.data);
   //   });
   // }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

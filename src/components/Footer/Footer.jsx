@@ -27,19 +27,30 @@ function Footer() {
                   Find your Dream House
                 </Link>
               </div>
+
               <div>
                 <Link to="#" className="text-decoration-none footer_links">
                   Explore our Listings
                 </Link>
               </div>
+
               <div>
                 <Link to="#" className="text-decoration-none footer_links">
-                  Rent Houses / Rooms
+                  Rent Houses
+                </Link>
+                &nbsp;{"/"}&nbsp;
+                <Link to="#" className="text-decoration-none footer_links">
+                  Rent Rooms
                 </Link>
               </div>
+
               <div>
                 <Link to="#" className="text-decoration-none footer_links">
-                  Flats / Plots
+                  Flats
+                </Link>
+                &nbsp;{"/"}&nbsp;
+                <Link to="#" className="text-decoration-none footer_links">
+                  Plots
                 </Link>
               </div>
             </Col>
@@ -52,12 +63,14 @@ function Footer() {
                   +92 320-933 79 39
                 </Link>
               </div>
+
               <div>
                 <IoLogoWhatsapp /> Contact us at: &nbsp;&nbsp;
                 <Link to="#" className="text-decoration-none footer_links">
                   +92 320-933 79 39
                 </Link>
               </div>
+
               <div>
                 <FaLocationDot /> Location: &nbsp;&nbsp;
                 <Link to="#" className="text-decoration-none footer_links word-break">
@@ -66,6 +79,7 @@ function Footer() {
               </div>
             </Col>
           </Row>
+
           <div className="footer_contact-icons text-center">
             Follow us: &nbsp;&nbsp;
             <Link

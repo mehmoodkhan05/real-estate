@@ -1,5 +1,5 @@
 import "./contact.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 import { Col, Container, Row } from "react-bootstrap";
@@ -55,17 +55,17 @@ function Contact() {
   //   });
   // };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
-      <section className="">
+      <section className="contact-section">
         <Container fluid className="">
           <Row>
             <Col lg={6} className="contact-left_side">
-              <h1 className="text-center">Contact US</h1>
-              
-              <div className="contactFA">
-                {/* <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> */}
-              </div>
+              <div className="overlay-image"></div>
             </Col>
 
             <Col lg={6} className="form_contact">
@@ -75,21 +75,17 @@ function Contact() {
                     <p>
                       Thank you for contacting us! We will get in touch with you
                       soon.
-                      <button
-                        className="button"
-                        onClick={handleGetBack}
-                      >
+                      <button className="button" onClick={handleGetBack}>
                         Get Back
                       </button>
                     </p>
                   ) : (
                     <form onSubmit={handleSubmit} method="POST">
-                      <h3 className="contactHeading text-warning">
-                        Get in Touch
-                      </h3>
-                      <p className="contactPrg text-warning">
+                      <h3 className="contactHeading">Get in Touch</h3>
+                      <p className="contactPrg">
                         Feel free to drop us a line below!
                       </p>
+
                       <label className="form-group">
                         <input
                           type="text"
@@ -99,11 +95,10 @@ function Contact() {
                           onChange={handleChange}
                           required
                         />
-                        <span className="contactTxt text-warning">
-                          Enter Your Name
-                        </span>
+                        <span className="contactTxt">Enter Your Name</span>
                         <span className="border"></span>
                       </label>
+
                       <label className="form-group">
                         <input
                           type="text"
@@ -113,11 +108,12 @@ function Contact() {
                           onChange={handleChange}
                           required
                         />
-                        <span htmlFor="" className="contactTxt text-warning">
+                        <span htmlFor="" className="contactTxt">
                           Enter Your E-mail
                         </span>
                         <span className="border"></span>
                       </label>
+
                       <label className="form-group">
                         <textarea
                           name="message"
@@ -126,14 +122,20 @@ function Contact() {
                           onChange={handleChange}
                           required
                         ></textarea>
-                        <span htmlFor="" className="contactTxt text-warning">
+                        <span htmlFor="" className="contactTxt">
                           Enter Your Querry
                         </span>
                         <span className="border"></span>
                       </label>
-                      <button type="submit" className="button">
-                        Submit
-                      </button>
+
+                      <div className="contact-btn text-center">
+                        <button
+                          type="submit"
+                          className="btn btn-w-128 text-uppercase"
+                        >
+                          Submit
+                        </button>
+                      </div>
                     </form>
                   )}
                 </div>

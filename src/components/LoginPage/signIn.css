@@ -1,12 +1,15 @@
-.main_header {
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+.signCustomContainer .signFormContainer .form-group .contactTxt {
+    color: var(--primary-color);
+    position: absolute;
+    top: 11px;
+    left: 0;
+    transition: all 0.2s ease;
+    transform-origin: 0 0;
+    cursor: text;
 }
 
-.signHeading {
-    margin: 0px;
+.main_header {
+    color: var(--primary-color);
     margin-bottom: 50px;
 }
 
@@ -18,31 +21,8 @@
     margin: 20px 0 30px;
 }
 
-.Sign-a {
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
-}
-
-.signButton {
-    border-radius: 20px;
-    border: 1px solid #249fad;
-    background-color: #249fad;
-    color: #000;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 12px 45px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    transition: transform 80ms ease-in;
-}
-
-.signButton:hover {
-    color: #fff;
-}
-
 .signForm {
-    background-color: #ffffff;
+    background: linear-gradient(229.6deg, #8BC5CB 50%, #51A8B1 65%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,27 +32,18 @@
     text-align: center;
 }
 
-.signInput {
-    background-color: rgb(247, 243, 243);
-    border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    width: 100%;
-}
-
-.signInput:focus {
-    outline: 1px solid #249fad;
-}
-
 .signCustomContainer {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 768px;
-    max-width: 100%;
-    min-height: 480px;
+    width: 900px;
+    height: 675px;
+}
+
+.signFormContainer .customSign {
+    color: var(--primary-color);
 }
 
 .customSign:hover {
@@ -97,11 +68,11 @@
 }
 
 .overlay {
-    background-image: url(../../images/login.jpeg);
+    background: url(../../images/login.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
-    opacity: 0.84;
+    filter: brightness(0.5);
     color: #fff;
     position: relative;
     left: -100%;
@@ -120,8 +91,5 @@
     top: 0;
     height: 100%;
     width: 50%;
-}
-
-.overlay-right {
     right: 0;
 }
