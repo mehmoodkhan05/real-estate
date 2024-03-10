@@ -1,85 +1,65 @@
-.bg-image {
-    /* background-image: url(./images/signup-bg.jpg); */
-    background: linear-gradient(to right, rgb(225, 231, 228), rgb(205, 214, 219));
+.registration-page {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    display: flex;
+    justify-content: end;
+    position: relative;
+    overflow: hidden;
+    width: 900px;
+    height: 675px;
 }
 
-.regForm {
-    border: none;
-    border-bottom: 1px solid #00ade6 !important;
-    display: block;
+.registration-page .reg_overlay {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 50%;
+    height: 100%;
+}
+
+.registration-page .reg_overlay-image {
+    background: url(../../images/login.jpeg) no-repeat right;
+    background-size: cover;
+    filter: brightness(0.5);
+    position: relative;
+    height: 100%;
     width: 100%;
-    height: 43px;
-    font-size: 15px;
-    background: none;
-    font-family: "Montserrat-SemiBold";
+    transition: all 0.3s ease-in-out;
 }
 
-.btnRegister {
-    border: none;
-    width: 162px;
-    height: 51px;
-    margin: auto;
-    cursor: pointer;
+.registration-page .reg_overlay-panel {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    background-color: black;
-    color: #fff;
-    text-transform: uppercase;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.btnRegister:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
+    flex-direction: column;
+    padding: 0 40px;
+    color: var(--white-color);
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #00aeff;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
+    height: 100%;
 }
 
-.btnRegister:hover {
-    border-color: transparent;
-    color: #fff;
-}
-
-.btnRegister:hover:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-.regInner {
-    /* background: #39449b; */
-    /* background: #84fab0; */
-    /* border: 10px solid #0d99d7; */
-    box-shadow: 5px 5px 15px 5px rgb(111, 109, 109);
-}
-
-.regHeading {
-    text-transform: uppercase;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+.registration-page .reg_form {
+    background: linear-gradient(229.6deg, #8BC5CB 50%, #51A8B1 65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    font-weight: bold;
+    padding: 0 104px;
+    height: 100%;
+}
+
+.registration-page .reg_heading {
+    color: var(--primary-color);
+    margin: -50px 0 50px 0;
+}
+
+.registration-page .reg_form .form-group span {
+    left: 0;
+}
+
+.registration-page .reg_form input {
+    caret-color: var(--primary-color) !important;
 }
