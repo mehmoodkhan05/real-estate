@@ -42,12 +42,8 @@
     height: 675px;
 }
 
-.signFormContainer .customSign {
-    color: var(--primary-color);
-}
-
 .customSign:hover {
-    opacity: 0.5;
+    color: var(--secondary-color) !important;
 }
 
 .signFormContainer {
@@ -71,13 +67,11 @@
     background: url(../../images/login.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: right;
     filter: brightness(0.5);
-    color: #fff;
     position: relative;
-    left: -100%;
     height: 100%;
-    width: 200%;
+    width: 100%;
 }
 
 .overlay-panel {
@@ -87,9 +81,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 40px;
-    text-align: center;
+    color: var(--white-color);
     top: 0;
     height: 100%;
-    width: 50%;
-    right: 0;
 }

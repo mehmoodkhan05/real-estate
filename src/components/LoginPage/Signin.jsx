@@ -84,12 +84,12 @@ function Signin() {
             >
               Login
             </button>
-            <div>
+            <div className="">
               <p className="mt-5 signPRG">
                 Don't have an Account?{" "}
                 <Link
                   to="/register"
-                  className="text-dark fw-bold text-decoration-none customSign"
+                  className="fw-bold text-decoration-none customSign"
                 >
                   Sign Up
                 </Link>
@@ -97,15 +97,14 @@ function Signin() {
             </div>
           </form>
         </div>
+
         <div className="overlay-sign">
-          <div className="overlay">
-            <div className="overlay-panel">
-              <img src="./images/login.jpeg" alt="" />
-              <h1>Welcome Back!</h1>
-              <p className="signPRG">
-                To keep connetced with us please login with your personal info.
-              </p>
-            </div>
+          <div className="overlay"></div>
+          <div className="overlay-panel text-center">
+            <h1>Welcome Back!</h1>
+            <p className="signPRG">
+              To keep connetced with us please login with your personal info.
+            </p>
           </div>
         </div>
       </Container>
